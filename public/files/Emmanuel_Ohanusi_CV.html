@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Curriculum Vitae — Emmanuel Ohanusi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      color: #0B333C;
+      background: #FAFAF8;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .cv-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(11, 51, 60, 0.08);
+      border: 1px solid #E2E8E6;
+    }
+    .header {
+      border-bottom: 2px solid #E2E8E6;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0 0 5px 0;
+      font-size: 32px;
+      font-weight: 800;
+      color: #0B333C;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #185563;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      font-size: 13px;
+      color: #51686D;
+      line-height: 1.8;
+    }
+    .badge {
+      background: #E3FCF1;
+      color: #0B333C;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      border: 1px solid #4BF2A7;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #0B333C;
+      border-bottom: 2px solid #4BF2A7;
+      padding-bottom: 6px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+    .item {
+      margin-bottom: 20px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .item-date {
+      color: #185563;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .item-sub {
+      color: #51686D;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .skill-card {
+      background: #F3F6F5;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 13px;
+    }
+    .skill-card strong {
+      display: block;
+      color: #0B333C;
+      margin-bottom: 4px;
+    }
+    .print-btn {
+      background: #0B333C;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 9999px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .cv-container { box-shadow: none; border: none; padding: 20px 0; }
+      .print-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <div style="text-align: right; margin-bottom: 15px;">
+      <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    </div>
+    <div class="header">
+      <div>
+        <div class="badge">CURRICULUM VITAE</div>
+        <h1>Emmanuel Ohanusi</h1>
+        <div class="title">Web App Developer &amp; UI Specialist</div>
+        <p style="margin: 0; color: #51686D; max-width: 480px; font-size: 14px;">
+          Product designer and full-stack web application specialist combining user research, interface strategy, and engineering precision to build scalable digital products.
+        </p>
+      </div>
+      <div class="contact-info">
+        <div><strong>Email:</strong> hello@emmanuelohanusi.design</div>
+        <div><strong>Phone:</strong> +1 (406) 555-0120</div>
+        <div><strong>Location:</strong> United States • Remote Worldwide</div>
+        <div><strong>Portfolio:</strong> emmanuelohanusi.design</div>
+      </div>
+    </div>
+
+    <h2>Professional Experience</h2>
+    <div class="item">
+      <div class="item-header">
+        <span>Product Designer &amp; Developer</span>
+        <span class="item-date">2024 – Present</span>
+      </div>
+      <div class="item-sub">Creative Digital Studio</div>
+      <p style="font-size: 13px; color: #51686D; margin: 4px 0;">
+        Lead interface engineering, multi-platform design systems, high-fidelity interactive wireframes, and production frontend prototypes in React and Next.js.
+      </p>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span>UI/UX Designer</span>
+        <span class="item-date">2022 – 2024</span>
+      </div>
+      <div class="item-sub">Digital Solutions Agency</div>
+      <p style="font-size: 13px; color: #51686D; margin: 4px 0;">
+        Delivered 20+ responsive web applications, SaaS dashboards, and consumer mobile apps. Spearheaded design audit processes and accessibility improvements.
+      </p>
+    </div>
+
+    <h2>Education &amp; Certifications</h2>
+    <div class="item">
+      <div class="item-header">
+        <span>Bachelor's Degree in Computer Science</span>
+        <span class="item-date">2020 – 2024</span>
+      </div>
+      <div class="item-sub">University of Design and Technology</div>
+      <p style="font-size: 13px; color: #51686D; margin: 4px 0;">
+        Focus on digital systems, interaction design, software engineering architecture, and user-centered computing.
+      </p>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span>UI/UX Design Certification</span>
+        <span class="item-date">2023</span>
+      </div>
+      <div class="item-sub">Professional Design Academy</div>
+      <p style="font-size: 13px; color: #51686D; margin: 4px 0;">
+        Advanced interaction patterns, user testing methodologies, design token architecture, and high-fidelity prototyping.
+      </p>
+    </div>
+
+    <h2>Core Competencies &amp; Tools</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <strong>Design &amp; Prototyping</strong>
+        Figma (98%), Sketch (92%), Adobe Photoshop (90%), After Effects (85%), Framer (90%), Webflow (95%)
+      </div>
+      <div class="skill-card">
+        <strong>Engineering &amp; Code</strong>
+        React, Next.js, TypeScript, Tailwind CSS, Node.js, REST APIs, Git, Responsive Web Architecture
+      </div>
+      <div class="skill-card">
+        <strong>Product Strategy</strong>
+        Design Systems, User Flow Mapping, Usability Audits, Micro-interactions, Accessibility (WCAG 2.1)
+      </div>
+    </div>
+  </div>
+</body>
+</html>
