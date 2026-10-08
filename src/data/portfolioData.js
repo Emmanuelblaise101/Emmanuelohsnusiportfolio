@@ -167,7 +167,7 @@ export const PRICING_TIERS = [
   {
     id: 'basic',
     name: 'Basic',
-    price: '$80',
+    price: '$480',
     frequency: '/ Starting at',
     description: 'Perfect for simple design needs and small projects.',
     popular: false,
@@ -308,10 +308,10 @@ export const FAQS = [
 ];
 
 export const CONTACT_INFO = {
-  email: 'hello@emmanuelohanusi.design',
-  phone: '+1 (406) 555-0120',
-  address: '2464 Royal Ln. Mesa, New Jersey 45463',
-  location: 'United States • Remote Worldwide',
+  email: 'emmanuelohanusi10@gmail.com',
+  phone: '+234 8137077713',
+  address: '22 kabba street, Nomansland Fagge, Kano',
+  location: 'Available Worldwide',
   availability: 'Available for Selected Projects',
   social: {
     github: 'https://github.com',
