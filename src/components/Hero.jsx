@@ -13,36 +13,33 @@ export default function Hero({ onOpenCV }) {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-ink-primary tracking-tight leading-[1.15]">
-            I'm <span className="text-amber">Emmanuel Ohanusi</span>,<br />
-            Web App Developer &amp; UI Specialist.
+            You know what your business needs.{' '}
+            <span className="text-amber">Let's build it.</span>
           </h1>
 
           {/* Short Bio */}
           <p className="text-base sm:text-lg text-ink-secondary max-w-xl leading-relaxed">
-            I build high-performance web applications and intuitive digital experiences that help fast-growing startups and enterprises turn complex concepts into refined, scalable products.
+            I help businesses and founders move from concepts and unfinished plans to usable websites and web applications that solve real problems, with a focus on usability, functionality, and getting the details right.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
               className="inline-flex items-center gap-3 bg-forest hover:bg-forest-deep text-white pl-6 pr-2 py-2.5 rounded-full text-sm font-semibold shadow-md active:scale-95 transition-all group"
-              href="#projects"
+              href="#contact"
             >
-              <span>View My Work</span>
-              <span className="w-8 h-8 rounded-full bg-amber flex items-center justify-center text-forest font-bold transition-transform duration-300 group-hover:translate-x-0.5">
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              <span>Discuss your project</span>
+              <span className="w-8 h-8 rounded-full bg-amber flex items-center justify-center text-forest font-bold transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                <span className="material-symbols-outlined text-[18px]">arrow_outward</span>
               </span>
             </a>
 
-            <button
-              onClick={onOpenCV}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-forest text-forest hover:bg-forest hover:text-white font-semibold text-sm active:scale-95 transition-all group cursor-pointer"
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-forest/20 text-forest hover:border-forest hover:bg-forest hover:text-white font-semibold text-sm active:scale-95 transition-all cursor-pointer"
             >
-              <span className="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:-translate-y-0.5">
-                download
-              </span>
-              <span>Download CV</span>
-            </button>
+              <span>View my work</span>
+            </a>
           </div>
 
           {/* Social Proof Icons */}
