@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Emmanuel Ohanusi — Web App Developer &amp; UI Specialist</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Caveat:wght@600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#0B333C',
+              deep: '#07242B',
+              dark: '#092B33',
+              surface: '#11424D',
+              light: '#185563'
+            },
+            amber: {
+              DEFAULT: '#4BF2A7',
+              warm: '#3CEFA4',
+              light: '#80F8C3',
+              soft: '#E3FCF1'
+            },
+            canvas: {
+              base: '#FAFAF8',
+              muted: '#F3F6F5',
+              card: '#FFFFFF',
+              border: '#E2E8E6'
+            },
+            ink: {
+              primary: '#0B333C',
+              secondary: '#51686D',
+              muted: '#8A9FA4'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            signature: ['Caveat', 'cursive']
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 24s linear infinite;
+    }
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spin-slow 18s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-canvas-base text-ink-primary font-sans antialiased overflow-x-hidden selection:bg-amber selection:text-forest-dark">
+<!-- ========================================================================= -->
+<!-- 1. TOP NAVIGATION BAR                                                     -->
+<!-- ========================================================================= -->
+<header class="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl rounded-full z-50 bg-white/90 backdrop-blur-md border border-canvas-border shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-6 py-3.5 w-full">
+<!-- Brand Logo -->
+<a class="flex items-center gap-2.5 group" href="#hero">
+<div class="w-9 h-9 rounded-full bg-forest flex items-center justify-center text-amber font-bold text-base shadow-sm">
+          EO
+        </div>
+<span class="font-bold text-ink-primary tracking-tight text-lg">
+          Emmanuel <span class="text-amber">Ohanusi</span>
+</span>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-ink-secondary">
+<a class="hover:text-forest transition-colors" href="#services">Services</a>
+<a class="hover:text-forest transition-colors" href="#about">About</a>
+<a class="hover:text-forest transition-colors" href="#tools">Tools</a>
+<a class="text-forest font-bold hover:text-forest transition-colors" href="#projects">Projects</a>
+<a class="hover:text-forest transition-colors" href="#journey">Journey</a>
+<a class="hover:text-forest transition-colors" href="#pricing">Pricing</a>
+<a class="hover:text-forest transition-colors" href="#testimonials">Testimonials</a>
+<a class="hover:text-forest transition-colors" href="#contact">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2.5 bg-forest hover:bg-forest-deep text-white pl-5 pr-2 py-2 rounded-full text-sm font-semibold shadow-sm active:scale-95 transition-all" href="#contact">
+<span>Let's Talk</span>
+<span class="w-7 h-7 rounded-full bg-amber flex items-center justify-center text-forest font-bold">
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- 2. HERO SECTION                                                           -->
+<!-- ========================================================================= -->
+<section class="relative pt-36 pb-20 md:pt-44 md:pb-28 bg-canvas-base overflow-hidden" id="hero">
+<div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Hero Left Column -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-6">
+<!-- Outlined Pill Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber bg-amber-soft text-forest text-xs font-bold tracking-wider">
+<span>👋</span> HELLO THERE!
+        </div>
+<!-- Headline -->
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-ink-primary tracking-tight leading-[1.15]">
+          I'm <span class="text-amber">Emmanuel Ohanusi</span>,<br/>Web App Developer &amp; UI Specialist.
+        </h1>
+<!-- Short Bio -->
+<p class="text-base sm:text-lg text-ink-secondary max-w-xl leading-relaxed">
+          I build high-performance web applications and intuitive digital experiences that help fast-growing startups and enterprises turn complex concepts into refined, scalable products.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-3 bg-forest hover:bg-forest-deep text-white pl-6 pr-2 py-2.5 rounded-full text-sm font-semibold shadow-md active:scale-95 transition-all" href="#projects">
+<span>View My Work</span>
+<span class="w-8 h-8 rounded-full bg-amber flex items-center justify-center text-forest font-bold">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-forest text-forest hover:bg-forest hover:text-white font-semibold text-sm active:scale-95 transition-all" href="#contact">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download CV</span>
+</a>
+</div>
+<!-- Social Proof Icons -->
+<div class="pt-4 flex items-center gap-4">
+<span class="text-xs font-bold uppercase tracking-wider text-ink-muted">FIND ME ON:</span>
+<div class="flex items-center gap-2">
+<a class="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-colors shadow-sm" href="https://github.com/Emmanuelblaise101" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+</a>
+<a class="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-colors shadow-sm" href="https://www.linkedin.com/in/emmanuel-ohanusi-bbaa78316/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+</a>
+<a class="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-colors shadow-sm" href="https://www.instagram.com/emmanuel.blaise.5439/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Hero Right Column: Graphic Silhouette & Portrait -->
+<div class="lg:col-span-5 relative flex justify-center items-center">
+<div class="relative w-[320px] h-[320px] sm:w-[400px] sm:h-[400px]">
+<!-- Mint Circular Backdrop -->
+<div class="absolute inset-0 rounded-full bg-amber transform translate-x-2 -translate-y-2 opacity-95"></div>
+<div class="absolute -inset-4 rounded-full border border-amber/40"></div>
+<!-- Portrait Frame -->
+<div class="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl bg-forest-dark flex items-center justify-center">
+<img alt="Emmanuel Ohanusi Portrait" class="w-full h-full object-cover object-center scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmDHaiVcVCDBHxFg9pKyc2IR1wRRBg9JrKTlGqYC8MwfSLmRWPm1AttfBvrczAeUpDEg7hWqhXNUp_7W7sBu0DOPiqXF_8G8mgULSM9ifZu7aHHs1zgETJo0_LJs4czrf3GBswCP7fW9Xz9uIwi3RQtWz8RJuWogtLjcwSslnouWNsOYr3YuKQeFGZGWhiWcpd3QlQz-rnCopU1-mPzteHUOLYWdsJx531v8lbJWwSfSDXOED8myYKTOJItxNc21PQfA"/>
+</div>
+<!-- Rotating Circular Badge -->
+<div class="absolute -top-3 -right-3 sm:-right-4 w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-forest text-white flex items-center justify-center shadow-xl border-2 border-amber">
+<div class="relative w-full h-full flex items-center justify-center">
+<svg class="w-full h-full animate-spin-slow p-1" viewbox="0 0 100 100">
+<path d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" id="heroBadgePath"></path>
+<text class="text-[9.5px] font-bold uppercase fill-amber tracking-[0.2em]">
+<textpath href="#heroBadgePath">HIRE ME • WEB DEVELOPER •</textpath>
+</text>
+</svg>
+<div class="absolute w-8 h-8 rounded-full bg-amber flex items-center justify-center text-forest font-bold">
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+</div>
+</div>
+<!-- Floating Badges -->
+<div class="absolute -bottom-2 -left-4 sm:-left-6 bg-amber text-forest px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-2 border border-amber-light">
+<span class="w-2.5 h-2.5 rounded-full bg-forest animate-pulse"></span>
+            Full Stack Engineer
+          </div>
+<div class="absolute bottom-16 -right-2 sm:-right-6 bg-forest text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-2 border border-amber/40">
+<span class="material-symbols-outlined text-amber text-[18px]">verified</span>
+            UI/UX Specialist
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. MARQUEE STRIP                                                          -->
+<!-- ========================================================================= -->
+<section class="bg-amber py-4 overflow-hidden border-y border-amber-warm/60 shadow-inner">
+<div class="relative flex items-center select-none overflow-hidden">
+<div class="animate-marquee whitespace-nowrap flex items-center gap-8 text-forest font-extrabold text-base md:text-lg uppercase tracking-wider">
+<span>App Design</span> <span class="text-forest/60">✻</span>
+<span>Website Design</span> <span class="text-forest/60">✻</span>
+<span>Dashboard</span> <span class="text-forest/60">✻</span>
+<span>UI/UX Engineering</span> <span class="text-forest/60">✻</span>
+<span>Prototyping</span> <span class="text-forest/60">✻</span>
+<span>Design Systems</span> <span class="text-forest/60">✻</span>
+<span>App Design</span> <span class="text-forest/60">✻</span>
+<span>Website Design</span> <span class="text-forest/60">✻</span>
+<span>Dashboard</span> <span class="text-forest/60">✻</span>
+<span>UI/UX Engineering</span> <span class="text-forest/60">✻</span>
+<span>Prototyping</span> <span class="text-forest/60">✻</span>
+<span>Design Systems</span> <span class="text-forest/60">✻</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. SERVICES SECTION                                                       -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-canvas-muted" id="services">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<div class="flex items-center gap-2 text-forest text-xs uppercase tracking-widest mb-2 font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> Services
+          </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-ink-primary">
+<span class="text-forest">Services</span> <span class="text-amber">I Provide</span>
+</h2>
+</div>
+<a class="inline-flex items-center gap-3 bg-forest hover:bg-forest-deep text-white pl-6 pr-2 py-2 rounded-full text-sm font-semibold self-start md:self-auto transition-all shadow-sm" href="#contact">
+<span>View All Services</span>
+<span class="w-7 h-7 rounded-full bg-amber flex items-center justify-center text-forest">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</a>
+</div>
+<!-- 3 Service Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white p-8 rounded-2xl border border-canvas-border flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-md group">
+<div>
+<div class="w-14 h-14 rounded-full bg-canvas-muted flex items-center justify-center text-forest mb-6 group-hover:bg-amber group-hover:text-forest transition-colors">
+<span class="material-symbols-outlined text-[28px]">stay_current_portrait</span>
+</div>
+<h3 class="text-xl font-bold text-ink-primary mb-3">App Design</h3>
+<p class="text-ink-secondary text-sm leading-relaxed mb-6">
+              Creating intuitive mobile experiences that combine beautiful interfaces with seamless functionality.
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 text-forest font-bold text-sm group-hover:text-forest transition-colors" href="#contact">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px] text-amber">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-8 rounded-2xl border border-canvas-border flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-md group">
+<div>
+<div class="w-14 h-14 rounded-full bg-canvas-muted flex items-center justify-center text-forest mb-6 group-hover:bg-amber group-hover:text-forest transition-colors">
+<span class="material-symbols-outlined text-[28px]">web</span>
+</div>
+<h3 class="text-xl font-bold text-ink-primary mb-3">Website Design</h3>
+<p class="text-ink-secondary text-sm leading-relaxed mb-6">
+              Designing modern websites that communicate your brand clearly and guide visitors toward action.
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 text-forest font-bold text-sm group-hover:text-forest transition-colors" href="#contact">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px] text-amber">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 rounded-2xl border border-canvas-border flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-md group">
+<div>
+<div class="w-14 h-14 rounded-full bg-canvas-muted flex items-center justify-center text-forest mb-6 group-hover:bg-amber group-hover:text-forest transition-colors">
+<span class="material-symbols-outlined text-[28px]">dashboard</span>
+</div>
+<h3 class="text-xl font-bold text-ink-primary mb-3">Dashboard Design</h3>
+<p class="text-ink-secondary text-sm leading-relaxed mb-6">
+              Building clean, user-friendly dashboards that turn complex information into clear insights.
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 text-forest font-bold text-sm group-hover:text-forest transition-colors" href="#contact">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px] text-amber">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. ABOUT ME SECTION (Deep Petrol Teal Green)                             -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-forest text-white relative overflow-hidden" id="about">
+<div class="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-amber/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<!-- Left Column: Circular Portrait & Badges -->
+<div class="lg:col-span-5 relative flex justify-center items-center">
+<div class="relative w-[300px] h-[300px] sm:w-[380px] sm:h-[380px]">
+<!-- Mint Arc Background -->
+<div class="absolute inset-0 rounded-full bg-amber"></div>
+<!-- Portrait Container -->
+<div class="relative w-full h-full rounded-full overflow-hidden border-4 border-forest shadow-2xl bg-forest-dark flex items-center justify-center">
+<img alt="About Emmanuel" class="w-full h-full object-cover object-center scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Ajv2A6N3Kz8XcW2Pvers416B_69L87PcB3ZeD44FPn6ukSqp6aCRDLazRKZEDrBP9HK-uELRv6AkjlxqTE-edS2c5Y-WS4U2paGfUjw74F1ILQCCKKoo7WPYbhOgU37Flqiv7qBRojD5vhnuQJbVSSJugf22-XXgYdzj45GJ0u_ydveWjVWaz_0n0_l8oCjmHmSJqzVMLsGTZWx2UX0yg2eQxMPexcnB2Xh1gsMHZLMezQlG1yOoucHzdy17HBufXg"/>
+</div>
+<!-- Orbiting Tags -->
+<div class="absolute -top-3 left-4 bg-white text-forest px-3.5 py-1.5 rounded-full text-xs font-bold shadow-md">
+            UI/UX Design
+          </div>
+<div class="absolute top-1/4 -left-6 bg-amber text-forest px-3.5 py-1.5 rounded-full text-xs font-bold shadow-md">
+            Mobile App Design
+          </div>
+<div class="absolute bottom-12 -left-4 bg-white text-forest px-3.5 py-1.5 rounded-full text-xs font-bold shadow-md">
+            Website Design
+          </div>
+<div class="absolute -bottom-3 left-1/3 bg-amber text-forest px-3.5 py-1.5 rounded-full text-xs font-bold shadow-md">
+            Design System
+          </div>
+<div class="absolute bottom-16 -right-6 bg-white text-forest px-3.5 py-1.5 rounded-full text-xs font-bold shadow-md">
+            Prototype
+          </div>
+<div class="absolute top-10 -right-4 bg-amber text-forest px-3.5 py-1.5 rounded-full text-xs font-bold shadow-md">
+            Dashboard
+          </div>
+</div>
+</div>
+<!-- Right Column: Narrative & Stats -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-6">
+<div class="flex items-center gap-2 text-amber text-xs uppercase tracking-widest font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> About Me
+        </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-white">
+          Who is <span class="text-amber">Emmanuel Ohanusi?</span>
+</h2>
+<p class="text-white/80 text-base sm:text-lg leading-relaxed max-w-2xl">
+          I'm a passionate product designer and web application specialist focused on creating thoughtful digital experiences. I combine research, strategy, and engineering precision to solve real problems and build products that people enjoy using.
+        </p>
+<!-- 4 Metric Counters -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-6 py-6 w-full border-y border-white/15">
+<div>
+<div class="text-3xl sm:text-4xl font-extrabold text-amber">06+</div>
+<div class="text-xs text-white/70 uppercase tracking-wider mt-1">Years Experience</div>
+</div>
+<div>
+<div class="text-3xl sm:text-4xl font-extrabold text-amber">50+</div>
+<div class="text-xs text-white/70 uppercase tracking-wider mt-1">Projects Completed</div>
+</div>
+<div>
+<div class="text-3xl sm:text-4xl font-extrabold text-amber">30+</div>
+<div class="text-xs text-white/70 uppercase tracking-wider mt-1">Happy Clients</div>
+</div>
+<div>
+<div class="text-3xl sm:text-4xl font-extrabold text-amber">12+</div>
+<div class="text-xs text-white/70 uppercase tracking-wider mt-1">Design Awards</div>
+</div>
+</div>
+<!-- Action Button & Signature -->
+<div class="flex flex-wrap items-center justify-between w-full pt-4 gap-6">
+<a class="inline-flex items-center gap-3 bg-amber text-forest font-bold pl-6 pr-2 py-2.5 rounded-full text-sm shadow-md hover:bg-amber-warm transition-all" href="#contact">
+<span>Download CV</span>
+<span class="w-8 h-8 rounded-full bg-forest text-amber flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</span>
+</a>
+<span class="font-signature text-3xl text-amber tracking-wider">
+            Emmanuel Ohanusi
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 6. TECH STACK & TOOLS SECTION                                             -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-canvas-base" id="tools">
+<div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
+<div class="inline-flex items-center gap-2 text-forest text-xs uppercase tracking-widest mb-3 font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> My Favorite Tools
+      </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-ink-primary mb-16">
+        Exploring the <span class="text-amber">Tools</span> Behind My Designs
+      </h2>
+<!-- 6 Tool Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- 1. Figma -->
+<div class="bg-white p-6 rounded-2xl border border-canvas-border flex flex-col items-center shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 group">
+<div class="w-16 h-16 rounded-2xl bg-canvas-muted flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-black/[0.04]">
+<svg class="w-8 h-8" fill="none" viewBox="0 0 38 57">
+<path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+<path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+<path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+<path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+<path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+</svg>
+</div>
+<span class="text-2xl font-extrabold text-ink-primary">98%</span>
+<span class="text-sm font-bold text-ink-primary mt-1">Figma</span>
+<span class="text-[11px] font-medium text-ink-muted mt-0.5">UI/UX &amp; Systems</span>
+</div>
+<!-- 2. Bubble.io -->
+<div class="bg-white p-6 rounded-2xl border border-canvas-border flex flex-col items-center shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 group">
+<div class="w-16 h-16 rounded-2xl bg-canvas-muted flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-black/[0.04]">
+<svg class="w-8 h-8" fill="none" viewBox="0 0 40 48">
+<ellipse cx="20" cy="14" fill="#03254C" rx="13" ry="13"/>
+<ellipse cx="20" cy="34" fill="#2C4BFF" rx="13" ry="13"/>
+</svg>
+</div>
+<span class="text-2xl font-extrabold text-ink-primary">94%</span>
+<span class="text-sm font-bold text-ink-primary mt-1">Bubble.io</span>
+<span class="text-[11px] font-medium text-ink-muted mt-0.5">Full-Stack No-Code</span>
+</div>
+<!-- 3. Squarespace -->
+<div class="bg-white p-6 rounded-2xl border border-canvas-border flex flex-col items-center shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 group">
+<div class="w-16 h-16 rounded-2xl bg-canvas-muted flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-black/[0.04]">
+<svg class="w-8 h-8" fill="#111111" viewBox="0 0 24 24">
+<path d="M22.655 8.719c-1.802-1.801-4.726-1.801-6.564 0l-7.351 7.35c-.45.45-.45 1.2 0 1.65.45.449 1.2.449 1.65 0l7.351-7.351c.899-.899 2.362-.899 3.264 0 .9.9.9 2.364 0 3.264l-7.239 7.239c.9.899 2.362.899 3.263 0l5.589-5.589c1.836-1.838 1.836-4.763.037-6.563zm-2.475 2.437c-.451-.45-1.201-.45-1.65 0l-7.354 7.389c-.9.899-2.361.899-3.262 0-.45-.45-1.2-.45-1.65 0s-.45 1.2 0 1.649c1.801 1.801 4.726 1.801 6.564 0l7.351-7.35c.449-.487.449-1.239.001-1.688zm-2.439-7.35c-1.801-1.801-4.726-1.801-6.564 0l-7.351 7.351c-.45.449-.45 1.199 0 1.649s1.2.45 1.65 0l7.395-7.351c.9-.899 2.371-.899 3.27 0 .451.45 1.201.45 1.65 0 .421-.487.421-1.199-.029-1.649h-.021zm-2.475 2.437c-.45-.45-1.2-.45-1.65 0l-7.351 7.389c-.899.9-2.363.9-3.265 0-.9-.899-.9-2.363 0-3.264l7.239-7.239c-.9-.9-2.362-.9-3.263 0L1.35 8.719c-1.8 1.8-1.8 4.725 0 6.563 1.801 1.801 4.725 1.801 6.564 0l7.35-7.351c.451-.488.451-1.238 0-1.688h.002z"/>
+</svg>
+</div>
+<span class="text-2xl font-extrabold text-ink-primary">92%</span>
+<span class="text-sm font-bold text-ink-primary mt-1">Squarespace</span>
+<span class="text-[11px] font-medium text-ink-muted mt-0.5">CMS &amp; E-commerce</span>
+</div>
+<!-- 4. Claude Code -->
+<div class="bg-white p-6 rounded-2xl border border-canvas-border flex flex-col items-center shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 group">
+<div class="w-16 h-16 rounded-2xl bg-canvas-muted flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-black/[0.04]">
+<svg class="w-8 h-8" fill="#CC785C" viewBox="0 0 100 100">
+<path d="m19.6 66.5 19.7-11 .3-1-.3-.5h-1l-3.3-.2-11.2-.3L14 53l-9.5-.5-2.4-.5L0 49l.2-1.5 2-1.3 2.9.2 6.3.5 9.5.6 6.9.4L38 49.1h1.6l.2-.7-.5-.4-.4-.4L29 41l-10.6-7-5.6-4.1-3-2-1.5-2-.6-4.2 2.7-3 3.7.3.9.2 3.7 2.9 8 6.1L37 36l1.5 1.2.6-.4.1-.3-.7-1.1L33 25l-6-10.4-2.7-4.3-.7-2.6c-.3-1-.4-2-.4-3l3-4.2L28 0l4.2.6L33.8 2l2.6 6 4.1 9.3L47 29.9l2 3.8 1 3.4.3 1h.7v-.5l.5-7.2 1-8.7 1-11.2.3-3.2 1.6-3.8 3-2L61 2.6l2 2.9-.3 1.8-1.1 7.7L59 27.1l-1.5 8.2h.9l1-1.1 4.1-5.4 6.9-8.6 3-3.5L77 13l2.3-1.8h4.3l3.1 4.7-1.4 4.9-4.4 5.6-3.7 4.7-5.3 7.1-3.2 5.7.3.4h.7l12-2.6 6.4-1.1 7.6-1.3 3.5 1.6.4 1.6-1.4 3.4-8.2 2-9.6 2-14.3 3.3-.2.1.2.3 6.4.6 2.8.2h6.8l12.6 1 3.3 2 1.9 2.7-.3 2-5.1 2.6-6.8-1.6-16-3.8-5.4-1.3h-.8v.4l4.6 4.5 8.3 7.5L89 80.1l.5 2.4-1.3 2-1.4-.2-9.2-7-3.6-3-8-6.8h-.5v.7l1.8 2.7 9.8 14.7.5 4.5-.7 1.4-2.6 1-2.7-.6-5.8-8-6-9-4.7-8.2-.5.4-2.9 30.2-1.3 1.5-3 1.2-2.5-2-1.4-3 1.4-6.2 1.6-8 1.3-6.4 1.2-7.9.7-2.6v-.2H49L43 72l-9 12.3-7.2 7.6-1.7.7-3-1.5.3-2.8L24 86l10-12.8 6-7.9 4-4.6-.1-.5h-.3L17.2 77.4l-4.7.6-2-2 .2-3 1-1 8-5.5Z"/>
+</svg>
+</div>
+<span class="text-2xl font-extrabold text-ink-primary">96%</span>
+<span class="text-sm font-bold text-ink-primary mt-1">Claude Code</span>
+<span class="text-[11px] font-medium text-ink-muted mt-0.5">AI Coding &amp; CLI</span>
+</div>
+<!-- 5. Supabase -->
+<div class="bg-white p-6 rounded-2xl border border-canvas-border flex flex-col items-center shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 group">
+<div class="w-16 h-16 rounded-2xl bg-canvas-muted flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-black/[0.04]">
+<svg class="w-8 h-8" fill="#3ECF8E" viewBox="0 0 24 24">
+<path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z"/>
+</svg>
+</div>
+<span class="text-2xl font-extrabold text-ink-primary">90%</span>
+<span class="text-sm font-bold text-ink-primary mt-1">Supabase</span>
+<span class="text-[11px] font-medium text-ink-muted mt-0.5">Backend &amp; Database</span>
+</div>
+<!-- 6. Antigravity -->
+<div class="bg-white p-6 rounded-2xl border border-canvas-border flex flex-col items-center shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 group">
+<div class="w-16 h-16 rounded-2xl bg-canvas-muted flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-black/[0.04]">
+<svg class="w-8 h-8" fill="none" viewBox="0 0 100 100">
+<defs>
+<linearGradient id="antiGradHtml" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1A73E8"/>
+<stop offset="50%" stop-color="#8B5CF6"/>
+<stop offset="100%" stop-color="#00F2FE"/>
+</linearGradient>
+</defs>
+<ellipse cx="50" cy="58" opacity="0.85" rx="34" ry="14" stroke="url(#antiGradHtml)" stroke-dasharray="6 3" stroke-width="3"/>
+<path d="M50 14 C50 32 32 50 14 50 C32 50 50 68 50 86 C50 68 68 50 86 50 C68 50 50 32 50 14 Z" fill="url(#antiGradHtml)"/>
+<circle cx="50" cy="50" fill="#FFFFFF" opacity="0.95" r="6"/>
+</svg>
+</div>
+<span class="text-2xl font-extrabold text-ink-primary">97%</span>
+<span class="text-sm font-bold text-ink-primary mt-1">Antigravity</span>
+<span class="text-[11px] font-medium text-ink-muted mt-0.5">Agentic IDE &amp; Dev</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 7. MY LATEST PROJECTS (2x2 Grid)                                          -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-canvas-muted" id="projects">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<div class="flex items-center gap-2 text-forest text-xs uppercase tracking-widest mb-2 font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> My Portfolio
+          </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-ink-primary">
+            My Latest <span class="text-amber">Projects</span>
+</h2>
+</div>
+<a class="inline-flex items-center gap-3 bg-forest hover:bg-forest-deep text-white pl-6 pr-2 py-2 rounded-full text-sm font-semibold self-start md:self-auto transition-all shadow-sm" href="#contact">
+<span>View All Projects</span>
+<span class="w-7 h-7 rounded-full bg-amber flex items-center justify-center text-forest">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</a>
+</div>
+<!-- 2x2 Grid of Projects -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Project 1 -->
+<div class="bg-white rounded-2xl border border-canvas-border overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
+<div class="relative h-72 sm:h-80 overflow-hidden bg-canvas-muted">
+<img alt="Mobile E-commerce App" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC88taxvnYHL4V3Jinxu37r2E5qBA4y5xpOzReZC0ob4SSlQD1RRNxlTyvHlgnZNnFaSxe3lzwi9d3mr6y-exAgVE6SeFQuWopbiAnKfR30itMmai5IQkOCb8ce3cY6BTgoyfheJuyyRx1fbf6hFnIKLxt5WBZzdzlrxFSgyJFySZBGOp3u_TT5PpzQUw1f7mXfP1OihJrP5usgHsVjervOTKjiSqYvGCCFmUzQwrBYzNOO3gFJcE0-"/>
+<div class="absolute inset-0 bg-forest/10 group-hover:opacity-0 transition-opacity"></div>
+</div>
+<div class="p-6 md:p-8 flex flex-col justify-between flex-grow">
+<div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 rounded-full bg-amber-soft text-forest text-xs font-bold border border-amber/30">App Design</span>
+<span class="px-3 py-1 rounded-full bg-canvas-muted text-ink-secondary text-xs font-semibold">UI/UX</span>
+<span class="px-3 py-1 rounded-full bg-canvas-muted text-ink-secondary text-xs font-semibold">E-commerce</span>
+</div>
+<h3 class="text-xl font-bold text-ink-primary mb-2">
+                Mobile E-commerce App Solution
+              </h3>
+<p class="text-ink-secondary text-sm mb-6">
+                A seamless shopping experience designed for mobile users with streamlined checkout and product discovery.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-canvas-border">
+<span class="text-xs font-medium text-ink-muted">UI/UX • Mobile App</span>
+<a class="w-10 h-10 rounded-full bg-forest text-white flex items-center justify-center group-hover:bg-amber group-hover:text-forest transition-all" href="#contact">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="bg-white rounded-2xl border border-canvas-border overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
+<div class="relative h-72 sm:h-80 overflow-hidden bg-canvas-muted">
+<img alt="Travel Website Redesign" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkue1uZbdWndC9lVccC-gRrzDICmPMpzCHyHQf2LHa-tXSs8FxYyucJaEvgAfRClKwmcnxTn6nTbJrWp8sge-eLqcsSLxWAAkl7HCIVc6aUDo7vT6RbxR_7h6Z2WZvBi3YjUkpJRGF_xATc6qadE-NEfjtM70SuOMrcArTc_xWIPLJBLwJJODTrVhGJRTO_-A1f-gxwAwucvymsJGHV7NR0uWRYKVqVRARPVzDWE49awvpO0WbUR-8"/>
+<div class="absolute inset-0 bg-forest/10 group-hover:opacity-0 transition-opacity"></div>
+</div>
+<div class="p-6 md:p-8 flex flex-col justify-between flex-grow">
+<div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 rounded-full bg-amber-soft text-forest text-xs font-bold border border-amber/30">Web Design</span>
+<span class="px-3 py-1 rounded-full bg-canvas-muted text-ink-secondary text-xs font-semibold">UI/UX</span>
+<span class="px-3 py-1 rounded-full bg-canvas-muted text-ink-secondary text-xs font-semibold">Responsive Design</span>
+</div>
+<h3 class="text-xl font-bold text-ink-primary mb-2">
+                Travel Website &amp; Booking Portal Redesign
+              </h3>
+<p class="text-ink-secondary text-sm mb-6">
+                A modern travel experience that makes discovering destination packages and booking itineraries effortless.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-canvas-border">
+<span class="text-xs font-medium text-ink-muted">Web Design • Responsive</span>
+<a class="w-10 h-10 rounded-full bg-forest text-white flex items-center justify-center group-hover:bg-amber group-hover:text-forest transition-all" href="#contact">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="bg-white rounded-2xl border border-canvas-border overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
+<div class="relative h-72 sm:h-80 overflow-hidden bg-canvas-muted">
+<img alt="Fitness Coaching App" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-RngSTLBwieUV7H0QUL5Yiu78NdcUmi2CKsO_KV3DgoyqhH6YKUGP92WTFKqVMMF62xTR1vbWR8hqwHsps31d7dWohd9bOXhEgHDtF1Xn15a7MrM6q6ymkYc1TUz6k8nFGsfVBIfDIBJvBCKe9nlVYRuIxiaiX3dKQfPnW4DwWVHEfKmuJs9NIIiuPXgSEF6MkxPqRP55dHHnUB03bLazTRbPjxr703HA0XdEYR6gbqkbGuOcoRAZ"/>
+<div class="absolute inset-0 bg-forest/10 group-hover:opacity-0 transition-opacity"></div>
+</div>
+<div class="p-6 md:p-8 flex flex-col justify-between flex-grow">
+<div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 rounded-full bg-amber-soft text-forest text-xs font-bold border border-amber/30">Mobile App</span>
+<span class="px-3 py-1 rounded-full bg-canvas-muted text-ink-secondary text-xs font-semibold">Product Design</span>
+<span class="px-3 py-1 rounded-full bg-canvas-muted text-ink-secondary text-xs font-semibold">Prototyping</span>
+</div>
+<h3 class="text-xl font-bold text-ink-primary mb-2">
+                Fitness Coaching &amp; Health Tracker App
+              </h3>
+<p class="text-ink-secondary text-sm mb-6">
+                A simple and engaging digital experience for tracking fitness goals, calories, and personalized workout routines.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-canvas-border">
+<span class="text-xs font-medium text-ink-muted">iOS &amp; Android • Product</span>
+<a class="w-10 h-10 rounded-full bg-forest text-white flex items-center justify-center group-hover:bg-amber group-hover:text-forest transition-all" href="#contact">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="bg-white rounded-2xl border border-canvas-border overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
+<div class="relative h-72 sm:h-80 overflow-hidden bg-canvas-muted">
+<img alt="Coffee Shop Website" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_wXEixyKfYYTgW20T_xn2AAPSL34ALnywL41M1uAM8Y1Ot48EABFyEjIzzmI18xPyZVFkPJXowX3qDJ5fDLFQqDRfMylVOYCCB7NJtc9pBLsauOCJdq961x0ptBvxkv3GdZzA_aL_sYTfFvFguW1HBc4NyA7XQn2F0Ll1llkT-CS6cwssYeeoACwA-NzjU11TdbyKDVy5IT-CEdremGdzu1mBCaTkzdWJt-bobLPlJ1qMPStSPdBh"/>
+<div class="absolute inset-0 bg-forest/10 group-hover:opacity-0 transition-opacity"></div>
+</div>
+<div class="p-6 md:p-8 flex flex-col justify-between flex-grow">
+<div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 rounded-full bg-amber-soft text-forest text-xs font-bold border border-amber/30">Web Design</span>
+<span class="px-3 py-1 rounded-full bg-canvas-muted text-ink-secondary text-xs font-semibold">Branding</span>
+<span class="px-3 py-1 rounded-full bg-canvas-muted text-ink-secondary text-xs font-semibold">Landing Page</span>
+</div>
+<h3 class="text-xl font-bold text-ink-primary mb-2">
+                Artisan Coffee Shop &amp; Ordering Experience
+              </h3>
+<p class="text-ink-secondary text-sm mb-6">
+                A distinctive digital storefront built around a premium coffee brand with real-time pickup ordering.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-canvas-border">
+<span class="text-xs font-medium text-ink-muted">E-Commerce • Branding</span>
+<a class="w-10 h-10 rounded-full bg-forest text-white flex items-center justify-center group-hover:bg-amber group-hover:text-forest transition-all" href="#contact">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 8. ACADEMIC AND PROFESSIONAL JOURNEY                                      -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-canvas-base" id="journey">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 text-forest text-xs uppercase tracking-widest mb-2 font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> Education &amp; Work
+        </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-ink-primary">
+          My <span class="text-amber">Academic and Professional</span> Journey
+        </h2>
+</div>
+<!-- 2 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Education Card -->
+<div class="bg-white p-8 md:p-10 rounded-2xl border border-canvas-border shadow-sm">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-14 h-14 rounded-full bg-amber-soft flex items-center justify-center text-forest">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<h3 class="text-2xl font-bold text-ink-primary">Education</h3>
+</div>
+<div class="space-y-8 relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-[2px] before:bg-canvas-muted">
+<div class="relative pl-8">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-amber border-2 border-white"></span>
+<span class="text-xs font-bold text-forest">2020 – 2024</span>
+<h4 class="text-lg font-bold text-ink-primary mt-1">Bachelor's Degree in Computer Science</h4>
+<p class="text-sm text-ink-secondary mt-1">University of Design and Technology • Focus on Digital design and user-centered systems.</p>
+</div>
+<div class="relative pl-8">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-amber border-2 border-white"></span>
+<span class="text-xs font-bold text-forest">2023</span>
+<h4 class="text-lg font-bold text-ink-primary mt-1">UI/UX Design Certification</h4>
+<p class="text-sm text-ink-secondary mt-1">Professional Design Academy • Advanced interaction design, prototyping, and usability.</p>
+</div>
+</div>
+</div>
+<!-- Work Experience Card -->
+<div class="bg-white p-8 md:p-10 rounded-2xl border border-canvas-border shadow-sm">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-14 h-14 rounded-full bg-amber-soft flex items-center justify-center text-forest">
+<span class="material-symbols-outlined text-[28px]">work</span>
+</div>
+<h3 class="text-2xl font-bold text-ink-primary">Work Experience</h3>
+</div>
+<div class="space-y-8 relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-[2px] before:bg-canvas-muted">
+<div class="relative pl-8">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-forest border-2 border-white"></span>
+<span class="text-xs font-bold text-forest">2024 – Present</span>
+<h4 class="text-lg font-bold text-ink-primary mt-1">Product Designer &amp; Developer</h4>
+<p class="text-sm text-ink-secondary mt-1">Creative Digital Studio • Lead interface design, high-fidelity wireframing, and code prototyping.</p>
+</div>
+<div class="relative pl-8">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-forest border-2 border-white"></span>
+<span class="text-xs font-bold text-forest">2022 – 2024</span>
+<h4 class="text-lg font-bold text-ink-primary mt-1">UI/UX Designer</h4>
+<p class="text-sm text-ink-secondary mt-1">Digital Solutions Agency • Delivered 20+ responsive web platforms and mobile applications.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 9. PRICING SECTION (Deep Petrol Teal Green)                               -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-forest text-white" id="pricing">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<div class="flex items-center gap-2 text-amber text-xs uppercase tracking-widest mb-2 font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> Pricing Table
+          </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-white">
+            My <span class="text-amber">Pricing Models</span>
+</h2>
+<p class="text-white/70 text-sm sm:text-base mt-2">
+            Flexible design packages tailored to your project's goals and requirements.
+          </p>
+</div>
+<a class="inline-flex items-center gap-3 bg-amber text-forest font-bold pl-6 pr-2 py-2 rounded-full text-sm self-start md:self-auto hover:bg-amber-warm transition-all shadow-sm" href="#contact">
+<span>Get Started</span>
+<span class="w-7 h-7 rounded-full bg-forest flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</a>
+</div>
+<!-- 3 Tier Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+<!-- Tier 1: Basic -->
+<div class="bg-forest-dark/70 rounded-2xl p-8 border border-white/10 flex flex-col justify-between hover:border-amber/50 transition-all">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="text-sm font-semibold text-white/80">Basic</span>
+<span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-amber">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</span>
+</div>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="text-4xl font-extrabold text-amber">$480</span>
+<span class="text-xs text-white/60">/ Starting at</span>
+</div>
+<p class="text-white/70 text-xs mb-6">Perfect for simple design needs and small projects.</p>
+<ul class="space-y-3.5 mb-8 text-sm text-white/80">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>One landing page or small task</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>Basic wireframes</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>Clean modern interface design</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>Source files included</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>Standard delivery</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-3 rounded-full border border-white/20 text-center text-white text-sm font-semibold hover:bg-white/10 transition-colors" href="#contact">
+            Choose Basic
+          </a>
+</div>
+<!-- Tier 2: Professional (Neon Mint Highlight) -->
+<div class="bg-amber text-forest rounded-2xl p-8 border-2 border-amber-light shadow-2xl flex flex-col justify-between relative transform lg:-translate-y-3">
+<div class="absolute -top-3.5 right-6 bg-forest text-amber px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+            Most Popular
+          </div>
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="text-sm font-bold text-forest">Professional</span>
+<span class="w-8 h-8 rounded-full bg-forest text-amber flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">star</span>
+</span>
+</div>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="text-4xl font-extrabold text-forest">$960</span>
+<span class="text-xs font-semibold text-forest/80">/ Starting at</span>
+</div>
+<p class="text-forest/80 text-xs font-medium mb-6">A complete design solution for growing businesses.</p>
+<ul class="space-y-3.5 mb-8 text-sm text-forest font-medium">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-forest text-[18px]">check_circle</span>
+<span>Multi-page website or app design</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-forest text-[18px]">check_circle</span>
+<span>User flow and wireframes</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-forest text-[18px]">check_circle</span>
+<span>High-fidelity interactive prototype</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-forest text-[18px]">check_circle</span>
+<span>Three revision rounds included</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-forest text-[18px]">check_circle</span>
+<span>Priority delivery &amp; support</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-3.5 rounded-full bg-forest hover:bg-forest-deep text-white font-bold text-center text-sm shadow-md transition-all" href="#contact">
+            Choose Professional
+          </a>
+</div>
+<!-- Tier 3: Premium -->
+<div class="bg-forest-dark/70 rounded-2xl p-8 border border-white/10 flex flex-col justify-between hover:border-amber/50 transition-all">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="text-sm font-semibold text-white/80">Premium</span>
+<span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-amber">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</span>
+</div>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="text-4xl font-extrabold text-amber">$2,280</span>
+<span class="text-xs text-white/60">/ Starting at</span>
+</div>
+<p class="text-white/70 text-xs mb-6">A comprehensive design experience for ambitious digital products.</p>
+<ul class="space-y-3.5 mb-8 text-sm text-white/80">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>Full product design &amp; UX research</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>Complete UI design system tokens</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>High-fidelity responsive layouts</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>Developer handoff documentation</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber text-[18px]">check_circle</span>
+<span>Priority 24/7 dedicated support</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-3 rounded-full border border-white/20 text-center text-white text-sm font-semibold hover:bg-white/10 transition-colors" href="#contact">
+            Choose Premium
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 10. CONTACT SECTION                                                       -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-canvas-base" id="contact">
+<div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Contact Info Left Column -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-forest text-xs uppercase tracking-widest mb-2 font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> Contact Us
+          </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-ink-primary mb-4">
+            Let's Talk for <span class="text-amber">Your Next Projects</span>
+</h2>
+<p class="text-ink-secondary text-sm sm:text-base leading-relaxed mb-8">
+            Have a project in mind? Tell me what you're building, and let's explore how thoughtful design can bring your ideas to life.
+          </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-amber-soft flex items-center justify-center text-forest">
+<span class="material-symbols-outlined text-[22px]">mail</span>
+</div>
+<div>
+<div class="text-xs text-ink-muted font-bold uppercase tracking-wider">Email Address</div>
+<div class="text-base font-bold text-ink-primary">emmanuelohanusi10@gmail.com</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-amber-soft flex items-center justify-center text-forest">
+<span class="material-symbols-outlined text-[22px]">location_on</span>
+</div>
+<div>
+<div class="text-xs text-ink-muted font-bold uppercase tracking-wider">Location</div>
+<div class="text-base font-bold text-ink-primary">United States • Remote Worldwide</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-amber-soft flex items-center justify-center text-forest">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+<div>
+<div class="text-xs text-ink-muted font-bold uppercase tracking-wider">Availability</div>
+<div class="text-base font-bold text-ink-primary">Available for Selected Projects</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<div class="p-4 rounded-xl bg-canvas-muted border border-canvas-border text-xs text-ink-secondary leading-relaxed">
+<span class="font-bold text-forest">Steps Involved:</span> Share your project idea → Discuss goals and timeline → Receive tailored design proposal.
+          </div>
+</div>
+</div>
+<!-- Contact Form Right Column -->
+<div class="lg:col-span-7 bg-white p-8 md:p-10 rounded-2xl border border-canvas-border shadow-sm">
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you! Emmanuel will review your message promptly.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold text-ink-primary mb-2">Full Name *</label>
+<input class="w-full bg-canvas-muted border border-canvas-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest text-ink-primary" placeholder="e.g. John Doe" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-ink-primary mb-2">Email Address *</label>
+<input class="w-full bg-canvas-muted border border-canvas-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest text-ink-primary" placeholder="example@gmail.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold text-ink-primary mb-2">Project Type *</label>
+<select class="w-full bg-canvas-muted border border-canvas-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest text-ink-primary">
+<option>Mobile App Design</option>
+<option>Website Design</option>
+<option>Dashboard &amp; SaaS</option>
+<option>Design System</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold text-ink-primary mb-2">Estimated Budget *</label>
+<select class="w-full bg-canvas-muted border border-canvas-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest text-ink-primary">
+<option>$1,000 – $5,000</option>
+<option>$5,000 – $10,000</option>
+<option>$10,000 – $25,000</option>
+<option>$25,000+</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-ink-primary mb-2">Project Timeline</label>
+<select class="w-full bg-canvas-muted border border-canvas-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest text-ink-primary">
+<option>Immediately (Within 2 weeks)</option>
+<option>1 – 2 Months</option>
+<option>3+ Months</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold text-ink-primary mb-2">Message or Project Details *</label>
+<textarea class="w-full bg-canvas-muted border border-canvas-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest text-ink-primary" placeholder="Describe your project, objectives, and any special requirements..." required="" rows="4"></textarea>
+</div>
+<button class="inline-flex items-center gap-3 bg-forest hover:bg-forest-deep text-white font-bold pl-6 pr-2 py-3 rounded-full text-sm shadow-md active:scale-95 transition-all" type="submit">
+<span>Send Message</span>
+<span class="w-8 h-8 rounded-full bg-amber flex items-center justify-center text-forest">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 11. TESTIMONIALS SECTION                                                  -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-canvas-muted" id="testimonials">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 text-forest text-xs uppercase tracking-widest mb-2 font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> Clients Testimonials
+        </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-ink-primary">
+          The Impact of My Work: <span class="text-amber">Client Testimonials</span>
+</h2>
+</div>
+<!-- 3 Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white p-8 rounded-2xl border border-canvas-border shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber mb-4">
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="text-xs font-bold text-ink-primary ml-2">5.0</span>
+</div>
+<p class="text-ink-secondary text-sm leading-relaxed mb-6 italic">
+              "Emmanuel understood our product vision and translated it into a clean, intuitive interface. The entire design process felt organized and collaborative."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-canvas-border">
+<img alt="Sarah Johnson" class="w-11 h-11 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkPq5CRjmrUnxLADvICMyeMe_Z4V_bhxG7nbDWLTmgo5vAwPNSl3YHsaCqtxm0olFaI1S-u11CGvw0qwEVJYUqm9rHF9ivW59JkLwcz8JLOr9GqGkQBFwhOOfz8H2Uz2lL54Z5YeULfmR1eEBOsi0IrHiV-OLP9MevHFDIzMVfaiOX4SHcue8vMyVx2vwXZiO0Bzp3ibLH7Slx4WiP1N6SMyifl7a-92FutB7_TCseHTgLELdqpBVM"/>
+<div>
+<div class="text-sm font-bold text-ink-primary">Sarah Johnson</div>
+<div class="text-xs text-ink-muted">Startup Founder</div>
+</div>
+</div>
+</div>
+<!-- Card 2 (Elevated) -->
+<div class="bg-white p-8 rounded-2xl border-2 border-amber shadow-md flex flex-col justify-between transform md:-translate-y-2">
+<div>
+<div class="flex items-center gap-1 text-amber mb-4">
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="text-xs font-bold text-ink-primary ml-2">5.0</span>
+</div>
+<p class="text-ink-secondary text-sm leading-relaxed mb-6 italic">
+              "Working with Emmanuel was an excellent experience. He brought clarity to our ideas, paid attention to the smallest details, and delivered a design our team was excited to build."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-canvas-border">
+<img alt="Michael Anderson" class="w-11 h-11 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0AKwhNquc0zD8vXRoQhXRcAqfxZZEB5txB0OrEz-6i36UB4LOFlw5lsJ4VnORhR4brfYlfK0l5X2C6QELYxCYAb1U5RcpXJJXeGPx-UIE5NJEhDnns5mbUDrOAqIbGXbV45s8DAern--FJDLR-iB72WkAnjeLvsiog91Mf6ajofyvyZPqDHDT6z9kYMTUYwS8wpYXFfF7kaO9FwE3nAp7o05ukFCi_1OK59UMJmjcSRBEU6eTCgUV"/>
+<div>
+<div class="text-sm font-bold text-ink-primary">Michael Anderson</div>
+<div class="text-xs text-ink-muted">Product Manager</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 rounded-2xl border border-canvas-border shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber mb-4">
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="material-symbols-outlined text-[20px] text-amber">star</span>
+<span class="text-xs font-bold text-ink-primary ml-2">5.0</span>
+</div>
+<p class="text-ink-secondary text-sm leading-relaxed mb-6 italic">
+              "The redesign gave our brand a more polished digital presence. Emmanuel balanced visual creativity with practical usability throughout the project."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-canvas-border">
+<img alt="Emily Carter" class="w-11 h-11 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeNXpwsbUb6loldl_aYWPsBpA06LVoIo7FtpckCcsAR8gWzClK_yPhpC7AadTx0dngtIf5a_P7N1DFKTjVDXbHBO_ejD6iW1mjL-iOlykr-HDjyPOcSRWgyia2VsyxD5OiztWZkfV_KfPVRf-t3O9G8jJPEKb4Ole2vcVYLLH3I6BBYX3cA2rRECKq6zDp-Fde1qyIg3oKgSwlLtM_3nbTBkkI4_LiyWDTR1NEXlPC8qYcexLJ-yNa"/>
+<div>
+<div class="text-sm font-bold text-ink-primary">Emily Carter</div>
+<div class="text-xs text-ink-muted">Marketing Director</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Navigation Dots -->
+<div class="flex justify-center items-center gap-3 mt-12">
+<button class="w-10 h-10 rounded-full bg-forest text-white flex items-center justify-center hover:bg-forest-deep transition-all">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-amber text-forest flex items-center justify-center font-bold hover:bg-amber-warm transition-all">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 12. BLOG SECTION                                                          -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-canvas-base" id="blogs">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<div class="flex items-center gap-2 text-forest text-xs uppercase tracking-widest mb-2 font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> News &amp; Blogs
+          </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-ink-primary">
+            Our Latest <span class="text-amber">News &amp; Blogs</span>
+</h2>
+</div>
+<a class="inline-flex items-center gap-3 bg-forest hover:bg-forest-deep text-white pl-6 pr-2 py-2 rounded-full text-sm font-semibold self-start md:self-auto transition-all shadow-sm" href="#contact">
+<span>View All Blogs</span>
+<span class="w-7 h-7 rounded-full bg-amber flex items-center justify-center text-forest">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</a>
+</div>
+<!-- 3 Blog Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Blog 1 -->
+<div class="bg-white rounded-2xl border border-canvas-border overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+<div class="h-48 overflow-hidden bg-canvas-muted">
+<img alt="Blog 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM0Xr24c2nnYB9a-CyLU2R-8y7wPUpj3-A8L-xbUadGAjdA3shVDsN3qkazOClRnptSs-Kyu72jiMuBJhc6tUuOjYJSP7m8XXZxDrzUbHCmkMk5ZdJVAOTT-giuU9yxICHdm0e_FXqO32gcpQrpUNbc5zkDnXVS8WtjDTKJ_HPkO_yWHMT0eSwoNLgSaf0tZzSQfBltpMDd5veSeyUPd9N2r8vgcNmjYD7xvBzjbCxN1z4Jkix8T4L"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-xs text-ink-muted mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-amber-soft text-forest font-bold">UX Design</span>
+<span>• 5 min read</span>
+</div>
+<h3 class="text-lg font-bold text-ink-primary mb-2 group-hover:text-forest transition-colors">
+              How to Create a Better User Experience
+            </h3>
+<p class="text-ink-secondary text-xs leading-relaxed mb-4">
+              Discover the principles that make digital products more intuitive, accessible, and enjoyable to use.
+            </p>
+<a class="inline-flex items-center gap-1.5 text-xs font-bold text-forest hover:text-amber transition-colors" href="#contact">
+<span>Read More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Blog 2 -->
+<div class="bg-white rounded-2xl border border-canvas-border overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+<div class="h-48 overflow-hidden bg-canvas-muted">
+<img alt="Blog 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApcNjmD8g_7avOwR5yGM_BbGQ1oK2YeEAPhbMbrx2KTQ6Tim3hqU4cstfJ1oYdzpl28Qz8DGSljVAnbQ44bO-iqlIaa2fyhaUdTiuooVjCCGrdAzohiydspakjRV4iWCMhquWHxs-EGyBLA3FIsP6O40mh5QYGs0L_zZndD60L3a8uTwYn6x8k0hxVIp-_Td_eUy00SNXvml7lyiiR4zKJ_0OKUaJHOVY0FuZD_e5cDoRcBEN3kdal"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-xs text-ink-muted mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-amber-soft text-forest font-bold">Web Design</span>
+<span>• 4 min read</span>
+</div>
+<h3 class="text-lg font-bold text-ink-primary mb-2 group-hover:text-forest transition-colors">
+              The Power of Minimalist Web Design
+            </h3>
+<p class="text-ink-secondary text-xs leading-relaxed mb-4">
+              Learn how thoughtful layouts, typography, and whitespace can make a website significantly more effective.
+            </p>
+<a class="inline-flex items-center gap-1.5 text-xs font-bold text-forest hover:text-amber transition-colors" href="#contact">
+<span>Read More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Blog 3 -->
+<div class="bg-white rounded-2xl border border-canvas-border overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+<div class="h-48 overflow-hidden bg-canvas-muted">
+<img alt="Blog 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsRGedWXQFu_dfbhbAlrwHlQoI5p0LoUm-l778mSXSxL50e2QNNA7h_iFnBpEmEXtXUbh-u3LM5XTuWZbN3QCckSwQ9TM28Ot0d2qA2MuIzZ2SaUJGinMdvM712ZgFR8UFA67P6CfdfFfiKl2i29TvW0b2rGHOsl4iTckGLrrVLfxD-9Agbr8hxRoYy_112LplPCdAq9vlY9iviBBKc3ghfFfz-vSW1ZI70eT3p4bAT8_tWWlFx9b5"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-xs text-ink-muted mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-amber-soft text-forest font-bold">Design Tools</span>
+<span>• 6 min read</span>
+</div>
+<h3 class="text-lg font-bold text-ink-primary mb-2 group-hover:text-forest transition-colors">
+              My Favorite Tools for Product Designers
+            </h3>
+<p class="text-ink-secondary text-xs leading-relaxed mb-4">
+              A practical look at the tools I use to plan, design, prototype, and communicate digital experiences.
+            </p>
+<a class="inline-flex items-center gap-1.5 text-xs font-bold text-forest hover:text-amber transition-colors" href="#contact">
+<span>Read More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 13. FAQ SECTION (Deep Petrol Teal Green)                                  -->
+<!-- ========================================================================= -->
+<section class="py-24 bg-forest text-white" id="faq">
+<div class="max-w-4xl mx-auto px-6 md:px-12">
+<!-- Section Header -->
+<div class="text-center mb-16">
+<div class="inline-flex items-center gap-2 text-amber text-xs uppercase tracking-widest mb-2 font-bold">
+<span class="w-6 h-[2px] bg-amber"></span> FAQs
+        </div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-white">
+          Questions? <span class="text-amber">Look here.</span>
+</h2>
+</div>
+<!-- Accordion Rows -->
+<div class="space-y-4">
+<!-- Item 1 -->
+<details class="group bg-forest-dark/80 rounded-2xl border border-white/10 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-base select-none">
+<span>What services do you offer as a product designer?</span>
+<span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-amber group-open:rotate-45 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</span>
+</summary>
+<div class="px-6 pb-6 text-sm text-white/80 leading-relaxed">
+            I offer UI/UX design, mobile app design, website design, dashboard design, prototyping, wireframing, and design system development.
+          </div>
+</details>
+<!-- Item 2 (Expanded / Active Neon Mint Green Style) -->
+<details class="group bg-amber text-forest rounded-2xl border-2 border-amber-light overflow-hidden shadow-lg" open="">
+<summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-base select-none">
+<span>Can I download your resume/CV for information?</span>
+<span class="w-8 h-8 rounded-full bg-forest text-amber flex items-center justify-center group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</span>
+</summary>
+<div class="px-6 pb-6 text-sm font-medium text-forest/90 leading-relaxed">
+            Certainly! You can download my resume/CV directly from my website or contact me. It provides a comprehensive overview of my education, work experience, and design achievements.
+          </div>
+</details>
+<!-- Item 3 -->
+<details class="group bg-forest-dark/80 rounded-2xl border border-white/10 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-base select-none">
+<span>Are you available for freelance design work?</span>
+<span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-amber group-open:rotate-45 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</span>
+</summary>
+<div class="px-6 pb-6 text-sm text-white/80 leading-relaxed">
+            Yes, I am currently available for select freelance contracts, MVP builds, and fractional product design advisory.
+          </div>
+</details>
+<!-- Item 4 -->
+<details class="group bg-forest-dark/80 rounded-2xl border border-white/10 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-base select-none">
+<span>What tools do you use for your design work?</span>
+<span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-amber group-open:rotate-45 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</span>
+</summary>
+<div class="px-6 pb-6 text-sm text-white/80 leading-relaxed">
+            I primarily use Figma for interface design and systems, complemented by Sketch, Photoshop, Framer, and Webflow for rapid deployment.
+          </div>
+</details>
+<!-- Item 5 -->
+<details class="group bg-forest-dark/80 rounded-2xl border border-white/10 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-base select-none">
+<span>How do I navigate through your portfolio projects?</span>
+<span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-amber group-open:rotate-45 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</span>
+</summary>
+<div class="px-6 pb-6 text-sm text-white/80 leading-relaxed">
+            Browse our Latest Projects section above and click on the arrow icon on any card to explore the full case study and live prototypes.
+          </div>
+</details>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 14. MARQUEE STRIP DIVIDER                                                 -->
+<!-- ========================================================================= -->
+<section class="bg-amber py-3.5 overflow-hidden border-y border-amber-warm/60">
+<div class="relative flex items-center select-none overflow-hidden">
+<div class="animate-marquee whitespace-nowrap flex items-center gap-8 text-forest font-extrabold text-sm md:text-base uppercase tracking-wider">
+<span>App Design</span> <span class="text-forest/60">✻</span>
+<span>Website Design</span> <span class="text-forest/60">✻</span>
+<span>Dashboard</span> <span class="text-forest/60">✻</span>
+<span>Wireframe</span> <span class="text-forest/60">✻</span>
+<span>App Design</span> <span class="text-forest/60">✻</span>
+<span>Website Design</span> <span class="text-forest/60">✻</span>
+<span>Dashboard</span> <span class="text-forest/60">✻</span>
+<span>Wireframe</span> <span class="text-forest/60">✻</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 15. FOOTER & FINAL CTA                                                    -->
+<!-- ========================================================================= -->
+<footer class="bg-forest-deep text-white pt-20 pb-12 border-t border-forest-light/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- Top Invitation Area -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-16 border-b border-white/10">
+<div>
+<h3 class="text-3xl sm:text-4xl font-extrabold text-white">
+            Let's <span class="text-amber">Connect</span> there
+          </h3>
+<p class="text-white/60 text-sm mt-1">Ready to create something memorable together?</p>
+</div>
+<a class="inline-flex items-center gap-3 bg-amber text-forest font-bold pl-6 pr-2 py-2.5 rounded-full text-sm hover:bg-amber-warm transition-all shadow-md" href="#contact">
+<span>Let's Talk</span>
+<span class="w-8 h-8 rounded-full bg-forest flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</a>
+</div>
+<!-- 4 Columns Footer Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-16">
+<!-- Col 1: Brand & Bio -->
+<div>
+<div class="flex items-center gap-2.5 mb-4">
+<div class="w-9 h-9 rounded-full bg-forest flex items-center justify-center text-amber font-bold text-base border border-amber/40">
+              EO
+            </div>
+<span class="font-bold text-white text-lg">
+              Emmanuel <span class="text-amber">Ohanusi</span>
+</span>
+</div>
+<p class="text-white/70 text-xs sm:text-sm leading-relaxed mb-6">
+            Product designer and web app developer creating meaningful digital experiences through thoughtful research, UI engineering, and design systems.
+          </p>
+<div class="flex items-center gap-2.5">
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-colors" href="https://github.com/Emmanuelblaise101" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+</a>
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-colors" href="https://www.linkedin.com/in/emmanuel-ohanusi-bbaa78316/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+</a>
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-colors" href="https://www.instagram.com/emmanuel.blaise.5439/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+</a>
+</div>
+</div>
+<!-- Col 2: Navigation Links -->
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider text-amber mb-4">Navigation</h4>
+<ul class="space-y-2.5 text-xs sm:text-sm text-white/70">
+<li><a class="hover:text-amber transition-colors" href="#hero">Home</a></li>
+<li><a class="hover:text-amber transition-colors" href="#services">Services</a></li>
+<li><a class="hover:text-amber transition-colors" href="#about">About</a></li>
+<li><a class="hover:text-amber transition-colors" href="#projects">Projects</a></li>
+<li><a class="hover:text-amber transition-colors" href="#blogs">Blogs</a></li>
+<li><a class="hover:text-amber transition-colors" href="#faq">FAQs</a></li>
+</ul>
+</div>
+<!-- Col 3: Contact Info -->
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider text-amber mb-4">Contact</h4>
+<ul class="space-y-2.5 text-xs sm:text-sm text-white/70">
+<li>+234 8137077713</li>
+<li>emmanuelohanusi10@gmail.com</li>
+<li>22 kabba street, Nomansland Fagge, Kano </li>
+<li class="pt-2 text-amber font-semibold">Available Worldwide</li>
+</ul>
+</div>
+<!-- Col 4: Newsletter -->
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider text-amber mb-4">Get the latest information</h4>
+<p class="text-white/70 text-xs leading-relaxed mb-4">
+            Subscribe to receive insights, design systems breakdowns, and case study updates.
+          </p>
+<form class="flex items-center bg-forest rounded-full p-1 border border-white/10" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+<input class="bg-transparent text-white px-4 py-2 text-xs focus:outline-none w-full placeholder-white/40" placeholder="Email address" required="" type="email"/>
+<button class="w-8 h-8 rounded-full bg-amber text-forest flex items-center justify-center font-bold hover:bg-amber-warm transition-colors" type="submit">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</form>
+</div>
+</div>
+<!-- Bottom Copyright Bar -->
+<div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
+<div>
+          Copyright © 2026 <span class="text-white font-semibold">Emmanuel Ohanusi</span>. All Rights Reserved.
+        </div>
+<div class="flex items-center gap-6">
+<a class="hover:text-white transition-colors" href="#">User Terms &amp; Conditions</a>
+<span>|</span>
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<span>|</span>
+<a class="text-amber hover:underline" href="#hero">Back to Top ↑</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
