@@ -314,9 +314,9 @@ export const CONTACT_INFO = {
   location: 'Available Worldwide',
   availability: 'Available for Selected Projects',
   social: {
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
-    dribbble: 'https://dribbble.com',
+    github: 'https://github.com/Emmanuelblaise101',
+    linkedin: 'https://www.linkedin.com/in/emmanuel-ohanusi-bbaa78316/',
+    instagram: 'https://www.instagram.com/emmanuel.blaise.5439/',
   }
 };
+

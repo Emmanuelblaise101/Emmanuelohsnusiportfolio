@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CONTACT_INFO } from '../data/portfolioData';
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 
 export default function Footer({ onOpenLegal }) {
   const [email, setEmail] = useState('');
@@ -57,40 +58,34 @@ export default function Footer({ onOpenLegal }) {
             </p>
             <div className="flex items-center gap-2.5">
               <a
-                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-colors shadow-sm"
+                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-all shadow-sm group"
                 href={CONTACT_INFO.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="GitHub"
+                aria-label="GitHub profile"
+                title="GitHub"
               >
-                <span className="material-symbols-outlined text-[16px]">code</span>
+                <GitHubIcon className="w-3.5 h-3.5 transition-transform group-hover:scale-110" />
               </a>
               <a
-                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-colors shadow-sm"
+                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-all shadow-sm group"
                 href={CONTACT_INFO.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn"
+                aria-label="LinkedIn profile"
+                title="LinkedIn"
               >
-                <span className="material-symbols-outlined text-[16px]">link</span>
+                <LinkedInIcon className="w-3.5 h-3.5 transition-transform group-hover:scale-110" />
               </a>
               <a
-                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-colors shadow-sm"
-                href={CONTACT_INFO.social.twitter}
+                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-all shadow-sm group"
+                href={CONTACT_INFO.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter / X"
+                aria-label="Instagram profile"
+                title="Instagram"
               >
-                <span className="material-symbols-outlined text-[16px]">share</span>
-              </a>
-              <a
-                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber hover:text-forest transition-colors shadow-sm"
-                href={CONTACT_INFO.social.dribbble}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Dribbble"
-              >
-                <span className="material-symbols-outlined text-[16px]">palette</span>
+                <InstagramIcon className="w-3.5 h-3.5 transition-transform group-hover:scale-110" />
               </a>
             </div>
           </div>

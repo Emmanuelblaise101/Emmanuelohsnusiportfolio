@@ -1,4 +1,6 @@
 import React from 'react';
+import { CONTACT_INFO } from '../data/portfolioData';
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 
 export default function Hero({ onOpenCV }) {
   return (
@@ -49,40 +51,34 @@ export default function Hero({ onOpenCV }) {
             </span>
             <div className="flex items-center gap-2">
               <a
-                className="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-colors shadow-sm"
-                href="https://github.com"
+                className="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-all shadow-sm group"
+                href={CONTACT_INFO.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub profile"
+                title="GitHub"
               >
-                <span className="material-symbols-outlined text-[18px]">code</span>
+                <GitHubIcon className="w-4 h-4 transition-transform group-hover:scale-110" />
               </a>
               <a
-                className="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-colors shadow-sm"
-                href="https://linkedin.com"
+                className="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-all shadow-sm group"
+                href={CONTACT_INFO.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn profile"
+                title="LinkedIn"
               >
-                <span className="material-symbols-outlined text-[18px]">link</span>
+                <LinkedInIcon className="w-4 h-4 transition-transform group-hover:scale-110" />
               </a>
               <a
-                className="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-colors shadow-sm"
-                href="https://twitter.com"
+                className="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-all shadow-sm group"
+                href={CONTACT_INFO.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter profile"
+                aria-label="Instagram profile"
+                title="Instagram"
               >
-                <span className="material-symbols-outlined text-[18px]">share</span>
-              </a>
-              <a
-                className="w-9 h-9 rounded-full bg-canvas-muted flex items-center justify-center text-forest hover:bg-amber hover:text-forest transition-colors shadow-sm"
-                href="https://dribbble.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Dribbble profile"
-              >
-                <span className="material-symbols-outlined text-[18px]">palette</span>
+                <InstagramIcon className="w-4 h-4 transition-transform group-hover:scale-110" />
               </a>
             </div>
           </div>
