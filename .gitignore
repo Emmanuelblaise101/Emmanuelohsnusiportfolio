@@ -24,6 +24,8 @@ npm-debug.log*
 # Temporary / scratch files
 scratch/
 prd_extracted/
+stitch_extracted/*.png
+stitch_extracted/*.md
 *.zip
 *.docx
 download_assets.js
