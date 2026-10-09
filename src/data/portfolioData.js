@@ -66,12 +66,54 @@ export const ABOUT_TAGS = [
 ];
 
 export const TOOLS = [
-  { name: 'Figma', percentage: '98%', icon: 'design_services', bgSoft: false },
-  { name: 'Sketch', percentage: '92%', icon: 'diamond', bgSoft: true },
-  { name: 'Photoshop', percentage: '90%', icon: 'photo_library', bgSoft: false },
-  { name: 'After Effects', percentage: '85%', icon: 'animation', bgSoft: false },
-  { name: 'Framer', percentage: '90%', icon: 'layers', bgSoft: true },
-  { name: 'Webflow', percentage: '95%', icon: 'code', bgSoft: false },
+  {
+    id: 'figma',
+    name: 'Figma',
+    category: 'UI/UX & Systems',
+    percentage: '98%',
+    bgHover: 'group-hover:border-[#A259FF]/40',
+    glowColor: 'rgba(162, 89, 255, 0.15)',
+  },
+  {
+    id: 'bubble',
+    name: 'Bubble.io',
+    category: 'Full-Stack No-Code',
+    percentage: '94%',
+    bgHover: 'group-hover:border-[#2C4BFF]/40',
+    glowColor: 'rgba(44, 75, 255, 0.15)',
+  },
+  {
+    id: 'squarespace',
+    name: 'Squarespace',
+    category: 'CMS & E-commerce',
+    percentage: '92%',
+    bgHover: 'group-hover:border-neutral-800/40',
+    glowColor: 'rgba(17, 17, 17, 0.12)',
+  },
+  {
+    id: 'claude',
+    name: 'Claude Code',
+    category: 'AI Coding & CLI',
+    percentage: '96%',
+    bgHover: 'group-hover:border-[#CC785C]/40',
+    glowColor: 'rgba(204, 120, 92, 0.15)',
+  },
+  {
+    id: 'supabase',
+    name: 'Supabase',
+    category: 'Backend & Database',
+    percentage: '90%',
+    bgHover: 'group-hover:border-[#3ECF8E]/40',
+    glowColor: 'rgba(62, 207, 142, 0.15)',
+  },
+  {
+    id: 'antigravity',
+    name: 'Antigravity',
+    category: 'Agentic IDE & Dev',
+    percentage: '97%',
+    bgHover: 'group-hover:border-[#8B5CF6]/40',
+    glowColor: 'rgba(139, 92, 246, 0.18)',
+  },
 ];
 
 export const PROJECTS = [
